@@ -1,0 +1,429 @@
+    <!doctype html>
+    <html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Referrer" content="origin"/>
+
+<style>
+    :root {
+        --Maincolor: #0396FF !important;
+        --MaincolorHover: #0396FF !important;
+        --fontSelectedColor: #3390ff !important;
+    }
+
+    #nprogress .bar {
+        background: var(--Maincolor) !important;
+    }
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.lovestu.com/corepress/static/lib/font/ceym/font.css">    <style>
+        html, textarea {
+            font-family: ceym, PingFang\ SC, Hiragino\ Sans\ GB, Microsoft\ YaHei, STHeiti, WenQuanYi\ Micro\ Hei, Helvetica, Arial, sans-serif !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.lovestu.com/corepress/static/lib/fontawesome5pro/css/all.min.css?v=1.3.4"><style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='fancybox_css-css'  href='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/lib/fancybox/fancybox.css?ver=18' type='text/css' media='all' />
+<link rel='stylesheet' id='css_main-css'  href='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/css/main.css?ver=18' type='text/css' media='all' />
+<link rel='stylesheet' id='embed-css'  href='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/css/embed.css?ver=18' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/css/animate.min.css?ver=18' type='text/css' media='all' />
+<link rel='stylesheet' id='comment-module-css'  href='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/css/comment-module.css?ver=18' type='text/css' media='all' />
+<link rel='stylesheet' id='post-content-css'  href='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/css/post-content.css?ver=18' type='text/css' media='all' />
+<link rel='stylesheet' id='css_main_mobile-css'  href='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/css/main-mobile.css?ver=18' type='text/css' media='all' />
+<link rel='stylesheet' id='pro_css_main-css'  href='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/css/main-pro.css?ver=18' type='text/css' media='all' />
+<link rel='stylesheet' id='pro_main_mobile-css'  href='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/css/main-mobile-pro.css?ver=18' type='text/css' media='all' />
+<link rel='stylesheet' id='corepress-cursor-css'  href='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/css/cursor.css?ver=18' type='text/css' media='all' />
+<style id='corepress-cursor-inline-css' type='text/css'>
+:root {--cur-default:url(https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/img/cur/cutrope/arrow.cur);--cur-pointer:url(https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/img/cur/cutrope/link.cur)}
+</style>
+<script type='text/javascript' id='tools-js-extra'>
+/* <![CDATA[ */
+var tools = {"index":"","page":"","post":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/js/tools.js?ver=18' id='tools-js'></script>
+<script type='text/javascript' src='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/js/jquery.min.js?ver=18' id='corepress_jquery-js'></script>
+<script type='text/javascript' id='index_js-js-extra'>
+/* <![CDATA[ */
+var set = {"is_single":"1","is_page":"","is_home":"","ajaxurl":"https:\/\/www.lzz0.com\/wp-admin\/admin-ajax.php","logourl":"http:\/\/lzz0.com\/wp-content\/uploads\/2021\/12\/uugai.com_1638613869673.png","imgurl":"https:\/\/www.lzz0.com\/wp-content\/themes\/CorePress-Pro\/static\/img","themeColor":"#0396FF","reprint":{"msg":"","copylenopen":0,"copylen":0,"addurl":0,"siteurl":"https:\/\/www.lzz0.com\/160.html"},"module":{"imglightbox":1,"imglazyload":1},"corepress_post_meta":{"catalog":0,"seo":{"open":0,"text":"","keywords":"","description":""},"postrighttag":{"open":0,"color":"#409EFF"},"postshow":"0","thumbnail":"","closesummary":0,"subtitle":"","listtitle":"","listtitlecolor":"","subtitlecolor":"#0396FF","closesidebar":0},"theme":{"sidebar_position":1,"loadbar":1},"index":{"linksicon":0,"chromeiconurl":"https:\/\/www.lzz0.com\/wp-content\/themes\/CorePress-Pro\/static\/img\/chrome.png"},"is_page_template":"","has_corepress_video":"0","themeversion":"18","autodark":"0","dark":"0","darklogourl":"","darkcss":"https:\/\/www.lzz0.com\/wp-content\/themes\/CorePress-Pro\/static\/css\/dark.css","popwindow":"0","popwindowhtml":"DQogICAgPGRpdiBjbGFzcz0iY3AtcG9wLXdpbmRvdyI+DQogICAgPGRpdiBjbGFzcz0iY3AtcG9wLXdpbmRvdy10aXRsZSI+DQogICAgPGkgY2xhc3M9ImZhciBmYS10aW1lcy1jaXJjbGUgY3AtcG9wLWNsb3NlIiBvbmNsaWNrPSJjbG9zZV9wb3Bfd2luZG93KCkiPjwvaT4NCiAgICA8ZGl2IHN0eWxlPSJjb2xvcjojZmZmO2JhY2tncm91bmQtY29sb3I6IzQwOWVmZiI+PGkgY2xhc3M9ImZhciBmYS1oZWFydCI+PC9pPiDlvLnnqpfmoIfpopg8L2Rpdj4NCiAgICA8L2Rpdj4NCiAgICA8ZGl2IGNsYXNzPSJjcC1wb3Atd2luZG93LWNvbnRlbnQiPg0KICAgIOaIkeaYr+S4gOS4quWFrOWRiuW8ueeql++8jOaUr+aMgUhUTUzlhoXlrrkNCiAgICA8L2Rpdj4NCiAgICA8ZGl2IGNsYXNzPSJjcC1wb3Atd2luZG93LWJ0bnMiPg0KICAgIDxidXR0b24gY2xhc3M9ImNwLXBvcC1idG4iIG9uY2xpY2s9ImNsb3NlX3BvcF93aW5kb3coKSI+56Gu5a6aPC9idXR0b24+DQogICAgPC9kaXY+DQogICAgPC9kaXY+DQogICAg","popwindowtime":"1","popwindowmd5":"1603009257000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/js/index.js?ver=18' id='index_js-js'></script>
+<script type='text/javascript' src='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/js/lazyload.min.js?ver=18' id='corepress_jquery_lazyload-js'></script>
+<script type='text/javascript' src='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/js/qrcode.min.js?ver=18' id='corepress_jquery_qrcode-js'></script>
+<script type='text/javascript' src='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/js/base64.js?ver=18' id='base64-js'></script>
+<script type='text/javascript' src='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/js/clipboard.min.js?ver=18' id='corepress_clipboard_js-js'></script>
+<script type='text/javascript' src='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/lib/fancybox/fancybox.umd.js?ver=18' id='fancybox-js'></script>
+<script type='text/javascript' src='https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/lib/fancybox/init.js?ver=18' id='fancybox_init-js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.lzz0.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.lzz0.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel="canonical" href="https://www.lzz0.com/160.html" />
+<link rel='shortlink' href='https://www.lzz0.com/?p=160' />
+<link rel="alternate" type="application/json+oembed" href="https://www.lzz0.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lzz0.com%2F160.html" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.lzz0.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.lzz0.com%2F160.html&#038;format=xml" />
+<link rel="stylesheet" href="https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/lib/nprogress/nprogress.min.css?v=1.3.4"><script src="https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/lib/nprogress/nprogress.min.js?v=1.3.4"></script>        <style>
+            .post-content-content img {
+                box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1);
+            }
+        </style>
+        <script src="https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/lib/highlight/highlight.min.js?v=1.3.4"></script><link rel="stylesheet" href="https://www.lzz0.com/wp-content/themes/CorePress-Pro/static/lib/highlight/style/corepress-dark.css?v=1.3.4"><title>创梦IAPP后台管理系统Pro版1.13对接文档 - 学习笔记</title>        <meta name="keywords" content="iapp"/>
+        <meta name="description" content="必须要的POST参数
+
+ 	mykey  后台设置一个mykey
+ 	appid   软件的id
+ 	id         后台用户的id
+
+以上的参数无特殊说明就是所有对接时都需要的加上参数。
+基础接口
+公告接口
+
+ 	接口地址：你的域名/API/g…"/>
+        
+
+
+    </head>
+    <body>
+    <style>
+    #app {
+        display: none;
+    }
+
+    body .app-show {
+        display: flex !important;
+    }
+</style>
+<script>NProgress.start();</script>    <div id="app">
+        <header>
+            <style>
+            body .top-divider {
+                min-height: 90px;
+            }
+
+            @media screen and (max-width: 500px) {
+                body .top-divider {
+                    min-height: 80px !important;
+                }
+
+                body .scroll-notice-animate {
+                    animation: 30s wordsLoop linear infinite normal;
+                }
+            }
+        </style>
+            <style>
+        body .scroll-notice {
+            background: #1E8BFF;
+            color: #fff;
+        }
+    </style>
+    <div class="scroll-notice">
+        <div class="scroll-notice-animate">
+         </div>
+    </div>
+        <div class="header-main-plane">
+                <div class="header-main container header-main-location-left">
+            <script>
+    function openMenu() {
+        $('body').css('overflow', 'hidden');
+        $(".drawer-menu-plane").addClass("drawer-menu-plane-show");
+        $(".menu-plane").appendTo($(".drawer-menu-list"));
+        $(".user-menu-plane").appendTo($(".drawer-menu-list"));
+        $(".user-menu-main").not('.user-menu-main-notlogin').append('<div class="m-dropdown" onclick="mobile_menuclick(event,this)"><i class="fa fa-angle-down"></i></div>')
+    }
+
+    function closeMenu() {
+        $('body').css('overflow', 'auto');
+        $(".drawer-menu-plane").removeClass("drawer-menu-plane-show");
+        $(".user-menu-plane").prependTo($(".header-menu"));
+        $(".menu-plane").prependTo($(".header-menu"));
+        $(".m-dropdown").remove();
+    }
+
+    function openSearch() {
+        $(".dialog-search-plane").addClass("dialog-search-plane-show");
+    }
+
+    function closeSearch() {
+        $(".dialog-search-plane").removeClass("dialog-search-plane-show");
+    }
+
+    function darkMode() {
+        if (window.isdark == true) {
+            removedarkcss();
+            cp_user_set_dark('0');
+        } else {
+            loaddarkcss();
+            cp_user_set_dark('1');
+        }
+    }
+</script>
+<div class="mobile-menu-btn" onclick="openMenu()">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+</div>
+<div class="drawer-menu-plane">
+    <div class="drawer-menu-list">
+        <div class="menu-mobile"><ul class="menu-mobile-header-list"><li id="menu-item-15" class="menu-item menu-item-15"><a href="#"><i class="fas fa-home-lg-alt" style="color:#0396FF"></i> </a></li>
+<li id="menu-item-6" class="menu-item current-post-ancestor menu-item-has-children menu-item-6"><a href="#"><i class="far fa-book-reader" style="color:#0396FF"></i>1.13</a>
+<li id="menu-item-6" class="menu-item current-post-ancestor menu-item-has-children menu-item-6"><a href="#"><i class="far fa-book-reader" style="color:#0396FF"></i> 1.14</a>
+<ul class="sub-menu">
+</ul>
+</li>
+</ul></div>    </div>
+    <div class="drawer-menu-write" onclick="closeMenu()">
+    </div>
+</div>
+<div class="header-logo-plane">
+    <div class="header-logo">
+        <a href="https://www.lzm" title=""><img src="htt613869673.png" alt=""></a>    </div>
+</div>
+<div class="mobile-search-btn" onclick="nSearch()">
+</div>
+<div class="dialog-search-plane">
+    <div class="dialog-mask" onclick="closeSearch()"></div>
+    <div class="dialog-plane">
+        <h2>搜索内容</h2>
+        <form class="search-form" action="https://www.lzz0.com" method="get" role="search">
+            <div class="search-form-input-plane">
+                <input type="text" class="search-keyword" name="s" placeholder="搜索内容"
+                       value="">
+            </div>
+            <div>
+                <button type="submit" class="search-submit" value="&#xf002;">搜索</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="header-menu">
+    <div class="menu-plane">
+
+
+</ul>
+</li>
+</ul></nav>
+    </div>
+    <div class="user-menu-plane">
+        <div class="user-menu-pc-search" onclick="openSearch()" title="搜索">
+            </i>
+        </div>
+                    <div class="user-menu-pc-dark" onclick="darkMode()" title="深色模式">
+                
+            </div>
+                                    <span class="user-menu-main user-menu-main-notlogin">
+                 <a href=""></a>
+
+                        </span>
+                    </div>
+</div>
+        </div>
+    </div>
+</header>        <div class="top-divider"></div>
+        <main class="container">
+            
+            <div class="html-main">
+                                        <div class="post-main">
+                                <div class="post-content-body">
+        <div class="crumbs-plane-body">
+                                <div class="crumbs-plane">
+                        <span class="corepress-crumbs-ul"><li></li></span>                    </div>
+                            </div>
+
+        <div class="post-content">
+            <h1 class="post-title">
+               Pro版1.13对接文档            </h1>
+            <div class="post-info">
+                <div class="post-info-left">
+                                        
+                <div class="post-info-right">
+            <span title="关闭或显示侧边栏" class="post-info-switch-sidebar post-info-switch-sidebar-show"><i
+                        class="fas fa-toggle-on"></i></span>
+                </div>
+            </div>
+                        <div class="post-content-post">
+                <div class="post-content-content">
+                    <h2>必须要的POST参数</h2>
+<ol>
+<li>mykey  后台设置一个mykey</li>
+<li>appid   软件的id</li>
+<li>id         后台用户的id</li>
+</ol>
+<pre><strong>以上的参数无特殊说明就是所有对接时都需要的加上参数。</strong></pre>
+<h2>基础接口</h2>
+<h3>公告接口</h3>
+<ul>
+<li>接口地址：你的域名/API/gg.php</li>
+<li>POST参数：ggid(公告的id)</li>
+<li>成功返回：{"code":"1", "msg" :"查询成功","title" :"公告标题","content":"公告内容","date":"公告发布时间","f":"公告是否显示"}</li>
+</ul>
+<h3>更新接口</h3>
+<ul>
+<li>接口地址：你的域名/API/gx.php</li>
+<li>POST参数：gxid(更新的id)</li>
+<li>成功返回：{"code":"1", "msg" :"查询成功","title" :"更新标题","content":"更新内容","dz":"下载地址","ver":"软件版本号","f":"更新是否显示"}</li>
+</ul>
+<h3>反馈接口</h3>
+<ul>
+<li>接口地址：你的域名/API/fk.php</li>
+<li>POST参数：title(反馈标题)  content(反馈内容)  email(反馈者联系邮箱)</li>
+<li>成功返回：{"code":"1", "msg" :"反馈成功"}</li>
+</ul>
+<h2>用户系统接口</h2>
+<h3>用户信息</h3>
+<ul>
+<li>接口地址：你的域名/API/user_xx.php</li>
+<li>POST参数：userid(用户id)</li>
+<li>成功返回：{"code":"1", "msg" :"查询成功","userid":"用户id","account":"用户账号","password":"用户密码","name":"用户昵称","email":"用户邮箱","money":"用户金币","vip":"用户vip状态","vipst":"用户vip开通时间","vipend":"用户vip到期时间","date":"用户注册时间","jy":"用户经验","qm":"用户签名"}</li>
+</ul>
+<h3>用户登录</h3>
+<ul>
+<li>接口地址：你的域名/API/user_login.php</li>
+<li>POST参数：account(用户账号)  password(用户密码)</li>
+<li>成功返回：{"code":"1", "msg" :"登录成功","userid":"用户id"}</li>
+</ul>
+<h3>用户注册</h3>
+<ul>
+<li>接口地址：你的域名/API/user_reg.php</li>
+<li>POST参数：account(用户账号)  password(用户密码) name(用户昵称) email(用户邮箱)</li>
+<li>成功返回：{"code":"1", "msg" :"注册成功"}</li>
+</ul>
+<h3>金币修改</h3>
+<ul>
+<li>接口地址：你的域名/API/user_jbxg.php</li>
+<li>POST参数：userid(用户id)  sl(增加或者扣除的数量，扣除在数字前面加上-号)</li>
+<li>成功返回：{"code":"1", "msg" :"修改成功"}</li>
+</ul>
+<h3>经验修改</h3>
+<ul>
+<li>接口地址：你的域名/API/user_jyxg.php</li>
+<li>POST参数：userid(用户id)  sl(增加或者扣除的数量，扣除在数字前面加上-号)</li>
+<li>成功返回：{"code":"1", "msg" :"修改成功"}</li>
+</ul>
+<h3>密码修改</h3>
+<ul>
+<li>接口地址：你的域名/API/user_mmxg.php</li>
+<li>POST参数：userid(用户id)  newpassword(新密码)</li>
+<li>成功返回：{"code":"1", "msg" :"修改成功"}</li>
+</ul>
+<h3>昵称修改</h3>
+<ul>
+<li>接口地址：你的域名/API/user_ncxg.php</li>
+<li>POST参数：userid(用户id)  newname(新昵称)</li>
+<li>成功返回：{"code":"1", "msg" :"修改成功"}</li>
+</ul>
+<h3>VIP修改</h3>
+<ul>
+<li>接口地址：你的域名/API/user_vipxg.php</li>
+<li>POST参数：userid(用户id)  day(增加或者扣除天数，扣除在数字前面加上-号)</li>
+<li>成功返回：{"code":"1", "msg" :"修改成功"}</li>
+</ul>
+<h2>卡密接口</h2>
+<h3>使用卡密</h3>
+<ul>
+<li>接口地址：你的域名/API/km.php</li>
+<li>POST参数：content(卡密)</li>
+<li>成功返回：{"code":"1", "msg" :"使用成功"}</li>
+</ul>
+<h2>便签系统</h2>
+<h3>添加便签</h3>
+<ul>
+<li>接口地址：你的域名/API/bq_add.php</li>
+<li>POST参数：userid(用户id)  title(便签标题)  content(便签内容)</li>
+<li>成功返回：{"code":"1", "msg" :"使用成功"}</li>
+</ul>
+<h3>删除便签</h3>
+<ul>
+<li>接口地址：你的域名/API/bq_del.php</li>
+<li>POST参数：bqid(便签id)</li>
+<li>成功返回：{"code":"1", "msg" :"删除成功"}</li>
+</ul>
+<h3>便签列表</h3>
+<ul>
+<li>接口地址：你的域名/API/bq_list.php</li>
+<li>POST参数：userid(用户id)</li>
+<li>成功返回：{"code":"1","msg":"查询成功","data":"{便签一信息},{便签二信息},{便签三信息}...''}</li>
+</ul>
+<h3>便签内容</h3>
+<ul>
+<li>接口地址：你的域名/API/bq_nr.php</li>
+<li>GET参数：bqid(便签id)</li>
+<li>成功返回：便签的内容</li>
+</ul>
+<h2>商店系统</h2>
+<h3>购买商品</h3>
+<ul>
+<li>接口地址：你的域名/API/shop_buy.php</li>
+<li>POST参数：userid(用户id)  shopid(商品id)</li>
+<li>成功返回：{"code":"1", "msg" :"购买成功"}</li>
+</ul>
+<h3>商品列表</h3>
+<ul>
+<li>接口地址：你的域名/API/shop_list.php</li>
+<li>POST参数：userid(用户id)</li>
+<li>成功返回：{"code":"1","msg":"查询成功","data":"{商品一信息},{商品二信息},{商品三信息}...''}</li>
+</ul>
+<h3>用户订单列表</h3>
+<ul>
+<li>接口地址：你的域名/API/shop_mylist.php</li>
+<li>POST参数：</li>
+<li>成功返回：{"code":"1","msg":"查询成功","data":"{订单一信息},{订单二信息},{订单三信息}...''}</li>
+</ul>
+<h2>论坛系统</h2>
+<h3>发布帖子</h3>
+<ul>
+<li>接口地址：你的域名/API/tz_add.php</li>
+<li>POST参数：userid(用户id)  bkid(板块id)  title(帖子标题)  conten(帖子内容)</li>
+<li>成功返回：{"code":"1", "msg" :"添加成功"}</li>
+</ul>
+<h3>删除帖子</h3>
+<ul>
+<li>接口地址：你的域名/API/tz_del.php</li>
+<li>POST参数：tzid(帖子id)</li>
+<li>成功返回：{"code":"1", "msg" :"删除成功"}</li>
+</ul>
+<h3>帖子列表</h3>
+<ul>
+<li>接口地址：你的域名/API/tz_list.php</li>
+<li>POST参数：bkid(板块id)</li>
+<li>成功返回：{"code":"1","msg":"查询成功","data":"{帖子一信息},{帖子二信息},{帖子三信息}...''}</li>
+</ul>
+<h3>发布评论</h3>
+<ul>
+<li>接口地址：你的域名/API/tz_pl_add.php</li>
+<li>POST参数：userid(用户id)  tzid(帖子id)  content(内容)</li>
+<li>成功返回：{"code":"1", "msg" :"添加成功"}</li>
+</ul>
+<h3>删除评论</h3>
+<ul>
+<li>接口地址：你的域名/API/tz_pl_del.php</li>
+<li>POST参数：plid(评论id)</li>
+<li>成功返回：{"code":"1", "msg" :"删除成功"}</li>
+</ul>
+<h3>评论列表</h3>
+<ul>
+<li>接口地址：你的域名/API/tz_pl_del.php</li>
+<li>POST参数：tzid(帖子id)</li>
+<li>成功返回：{"code":"1","msg":"查询成功","data":"{评论一信息},{评论二信息},{评论三信息}...''}</li>
+</ul>
+<p>&nbsp;</p>
+                </div>
+                <div class="post-end-tools">
+                                            <div class="post-copyright">
+                   
+
+            </li>
+
+            </div>                            </div>
+                        </div>
+                                    </div>
+                    </main>
+        <footer>
+            <script>console.log("\n %c CorePress-Pro主题 v1.3.4 %c by applek | www.lovestu.com", "color:#fff;background:#f39d2e;padding:5px 0;", "color:#eee;background:#444;padding:5px 10px;");
+
+
+        </footer>
+    </div>
+    </body>
+    </html>
